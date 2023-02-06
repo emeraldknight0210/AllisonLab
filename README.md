@@ -1,1 +1,2 @@
-hello
+# Build settings
+theme: minima
