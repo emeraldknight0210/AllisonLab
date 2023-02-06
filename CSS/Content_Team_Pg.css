@@ -1,0 +1,472 @@
+body {
+    background-image: url("../Images/Wallpaper3.png");
+    background-position: center;
+    background-size: 120%;
+    background-attachment: scroll;
+} 
+
+#topnavbar .link_container #team_icon {
+    visibility: visible;
+    opacity: 1;
+    right: 0;
+}
+#topnavbar #link_container2 {
+    position: relative;
+}
+#topnavbar #link_container2::after {
+    position: absolute;
+    content: "";
+    z-index: 3;
+    top: max(75%, 40px);
+    left: 50%;
+    border-width: 15px;
+    margin-left: -15px;
+    border-style: solid;
+    border-color: transparent transparent rgb(141, 198, 62) transparent;
+}
+#topnavbar #link_container2 .link {
+    color: rgb(141, 198, 62);
+    padding-right: max(2.5vw, 40px);
+    cursor: default;
+}
+
+.bar1, .bar2, .bar3 {
+    background-color: rgba(141, 198, 62, 1);
+}
+#menu_button:hover {
+    background-color: rgba(141, 198, 62, 1);
+}
+.sidenav {
+    background: url("../Images/Footer_Wallpaper3.png") no-repeat;
+    background-position: right;
+}
+.sidenav a:not(#logo_link):hover {
+    background-color: rgba(141, 198, 62, .3);
+}
+
+#banner {
+    height: max(28vw, 500px);
+}
+.static_banner {
+    width: 100%;
+    height: max(28vw, 500px);
+    object-fit: cover;
+    object-position: 50% 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}
+#intro {
+    display: inline-block;
+    width: 90%;
+}
+#intro h1 {
+    padding-bottom: 30px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px rgb(10, 10, 10);
+}
+#breadcrumb_team_pg {
+    background-color: rgb(141, 198, 62);
+}
+
+.anchor {
+    background-color: rgba(141, 198, 62, .8);
+}
+.anchor:hover {
+    background-color: rgba(255, 255, 255, 1);
+    border-color: rgba(141, 198, 62, 1);
+}
+.anchor:hover div {
+    color: rgba(141, 198, 62, 1);
+}
+
+#footer {
+    background: url("../Images/Footer_Wallpaper3_Rotated.png") no-repeat;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(141, 198, 62, .7);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(141, 198, 62, .9);
+}
+
+
+.scrolling_animation {
+    transform: translateY(150px);
+    opacity: 0;
+}
+.scrolling_animation.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+#team_members, #network, #fundings {
+    margin: max(4vw, 70px) 9vw 0;
+    display: flex;
+    flex-direction: column;
+    transition: .3s;
+}
+#team_members h2 {
+    font-size: max(1.8vw, 30px);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 50px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+#flex_container1, #flex_container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.descriptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    margin-bottom: 50px;
+    align-self: flex-start;
+    cursor: pointer;
+}
+.more_info {
+    width: max(1vw, 18px);
+    height: auto;
+    margin-left: 7px;
+}
+.descriptions .personal_img {
+    height: 170px;
+    width: 170px;
+    box-sizing: border-box;
+    object-fit: contain;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    transition: .3s;
+}
+.descriptions .role {
+    height: 34%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#last_desc div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    border: 3px solid transparent;
+    transition: .5s;
+}
+#last_desc .alumni_img {
+    width: 110px;
+    height: 110px;
+    box-sizing: border-box;
+    object-fit: contain;
+}
+.role p {
+    text-align: center;
+    font-size: max(.9vw, 16px);
+    margin: 0;
+    transition: .3s;
+}
+.role p:first-child {
+    font-size: max(1vw, 18px);
+    font-weight: 700;
+    padding: 20px 0 7px;
+}
+.role p:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.descriptions:hover p {
+    color: hsl(85, 54%, 31%);
+}
+.descriptions:hover .personal_img {
+    border-color: rgba(141, 198, 62, 1);
+}
+#last_desc:hover div:first-child {
+    border-color: rgba(141, 198, 62, 1);
+}
+
+
+#network #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#national, #international {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    list-style-type: none;
+    padding: 0;
+}
+#network h2, #fundings h2 {
+    font-size: max(1.8vw, 30px);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+#national h3, #international h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: max(1.1vw, 20px);
+    margin-bottom: 30px;
+    margin-top: 20px;
+    color: hsl(85, 54%, 31%);
+    text-align: center;
+}
+#national {
+    border-bottom: 1px solid hsl(85, 54%, 31%);
+}
+#network li {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#network li:not(:first-child) {
+    margin-bottom: 30px;
+}
+#network li p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 0 10px 0;
+    color: rgb(82, 89, 59);
+}
+#network li p:first-child {
+    font-size: max(1vw, 18px);
+}
+#network li p:first-child img {
+    width: max(1vw, 18px);
+    height: auto;
+    padding-right: 5px;
+}
+#network li p:last-child {
+    font-size: max(.9vw, 16px);
+}
+#network li p:last-child img {
+    width: max(.9vw, 16px);
+    height: auto;
+    padding-right: 5px;
+}
+
+
+#fundings #flex_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.img_container img {
+    height: max(8.5vw, 120px);
+    width: auto;
+}
+
+
+.personal_info {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 3;
+}
+.buffer_layer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 440px;
+    height: 910px;
+    margin: auto;
+    border-radius: 5px;
+    outline: 3px solid honeydew;
+    animation-name: grow;
+    animation-duration: .5s;
+}
+.left_column, .right_column {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+.left_column img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 30px 50px 0;
+}
+.left_column .personal_contacts {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 30%;
+    padding: 10px;
+    width: auto;
+    border-bottom-left-radius: 5px;
+    background: url("../Images/Footer_Wallpaper3_Rotated.png") no-repeat;
+    background-position: bottom;
+    background-size: 250% 250%;
+}
+.info_container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: max(.9vw, 16px);
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0;
+    color: black;
+}
+.right_side {
+    padding: 15px 5px 0;
+}
+.info_container .icon {
+    width: max(1vw, 18px);
+    height: auto;
+    padding-right: 10px;
+    padding-top: 1px;
+}
+.right_side .icon {
+    padding: 0;
+}
+.right_column {
+    justify-content: flex-start;
+    padding: 15px 50px 20px;
+    background-color: white;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+.right_column h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: max(1.1vw, 20px);
+    text-align: center;
+    margin-bottom: 0;
+}
+.right_column h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: max(1vw, 18px);
+    text-align: center;
+    margin-bottom: 10px;
+}
+.right_column p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: max(.9vw, 16px);
+    text-align: justify;
+    line-height: 1.6;
+}
+.right_column a {
+    color: darkblue;
+}
+.right_column a:hover {
+    text-decoration: underline;
+}
+#alumni .right_column { /*remember to delete this when the list is long enough*/
+    overflow: hidden;
+}
+.right_column:last-of-type img {
+    width: max(1vw, 18px);
+    padding-top: 3px;
+    margin-right: 10px;
+}
+.right_column:last-of-type p {
+    display: flex;
+    align-items: flex-start;
+    align-self: flex-start;
+}
+.exit_button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: whitesmoke;
+    transition: .5s;
+}
+.exit_button:hover {
+    transform: rotate(180deg);
+    color: white;
+    background-color: rgba(141, 198, 62, 1);
+}
+@keyframes grow {
+    from {transform: scale(.1);}
+    to {transform: scale(1);}
+}
+
+
+@media screen and (min-width: 641px) {
+    #flex_container1, #flex_container2 {flex-direction: row; align-items: center;}
+    #team_members h2 {margin-bottom: 70px;}
+    .descriptions {width: 45%; margin-bottom: 60px;}
+
+    #network #container {flex-direction: row;}
+    #national, #international {width: 100%;}
+    #national {border-right: 1px solid hsl(85, 54%, 31%); border-bottom: 2px solid hsl(85, 54%, 31%);}
+    #international {border-left: 1px solid hsl(85, 54%, 31%); border-bottom: 2px solid hsl(85, 54%, 31%);}
+    #network h2, #fundings h2 {margin-bottom: 50px;}
+    #national h3, #international h3 {text-align: left;}
+    #network li {width: 80%;}
+    #network li p {justify-content: left;}
+    #network li p:last-child {padding-left: 25px;}
+
+    #fundings {margin-bottom: 130px;}
+    .img_container {flex-direction: row;}
+    .img_container img {margin-right: 15px;}
+}
+@media screen and (min-width: 961px) {
+    #team_members h2 {margin-bottom: 85px;}
+    #flex_container1 {margin-bottom: 70px;}
+    .descriptions {width: 18%; margin-bottom: 0;}
+    .descriptions:not(:last-child) {margin-right: 9.3%;}
+    .left_column .personal_contacts {display: flex;}
+    .personal_info {padding-top: 130px;}
+    .right_side {display: none;}
+    .info_container {color: white;}
+    .left_column {width: 40%;}
+    .right_column:not(:last-of-type) {width: 60%; padding-top: 50px;}
+    .buffer_layer {flex-direction: row; width: max(50vw, 850px); height: max(30vw, 510px); outline-style: ridge;}
+    .left_column img {height: 70%; margin: 0; border-radius: 5px 0 0 0;}
+
+    #fundings #flex_container {flex-direction: row; flex-wrap: wrap;}
+}
+@media screen and (min-width: 1201px) {
+    #team_members, #network, #fundings {margin-left: 11vw; margin-right: 11vw;}
+}
+@media screen and (min-width: 1501px) {
+    #team_members, #network, #fundings {margin-left: 25vw; margin-right: 25vw;}
+
+    #network li {width: 85%;}
+}

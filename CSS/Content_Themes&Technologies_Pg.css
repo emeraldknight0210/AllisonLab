@@ -1,0 +1,44 @@
+#themes_n_technologies {
+    margin: max(5vw, 70px) 6vw 7vw;
+}
+#themes_n_technologies h2 {
+    font-size: max(1.3vw, 22px);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#themes_n_technologies p {
+    font-size: max(1vw, 16px);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    text-align: justify;
+}
+#article2 {
+    overflow: auto;
+}
+#article2 #img1 {
+    width: 0;
+    margin-right: 2%;
+    margin-top: 6px;
+    float: left;
+    border-radius: 5px;
+}
+#article2 #img2 {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+@media screen and (min-width: 641px) {
+    #article2 #img1 {width: 48%;}
+    #article2 #img2 {display: none;}
+}
+@media screen and (min-width: 961px) {
+    #article2 #img1 {width: 35%;}
+}
+@media screen and (min-width: 1201px) {
+    #article2 #img1 {width: 25%;}
+}
+@media screen and (min-width: 1501px) {
+    #themes_n_technologies {margin-left: 11vw; margin-right: 11vw;}
+    #article2 #img1 {width: 20%;}
+}

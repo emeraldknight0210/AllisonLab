@@ -1,0 +1,104 @@
+.scrolling_animation {
+    transform: translateY(150px);
+    opacity: 0;
+}
+.scrolling_animation.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+#publications_list {
+    margin: max(4vw, 70px) 6vw 0;
+}
+.publishing_year {
+    margin-bottom: 75px;
+    position: relative;
+}
+.publishing_year hr {
+    height: 1px;
+    border-width: 0;
+    background-color: rgba(0, 0, 0, .6);
+    color: rgba(0, 0, 0, .6);
+    margin-bottom: 50px;
+}
+.publishing_year h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    line-height: 1.6;
+    padding: 15px;
+    background-color: white;
+    position: absolute;
+    top: -63px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.containers {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.left_container, .right_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.publication.scrolling_animation {
+    display: block;
+    outline: 1px groove rgba(0, 0, 0, .19);
+    border-radius: 3px;
+    padding: max(1vw, 10px);
+    margin-bottom: max(2vw, 30px);
+    box-sizing: border-box;
+    width: 100%;
+    transition: transform .3s, box-shadow .3s;
+}
+.publication span {
+    padding: max(.1vw, 1.5px) max(.2vw, 3px);
+    margin-right: max(.3vw, 5px);
+    color: white;
+    background-color: rgba(0, 0, 0, .6);
+    border-radius: 3px;
+    line-height: 1.6;
+    font-size: max(.9vw, 15.5px );
+}
+.publication.scrolling_animation:hover {
+    transform: scale(1.05);
+    outline-style: ridge;
+    box-shadow: 0 4px 8px 0 rgba(0, 0 , 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+}
+.publication .ref_link {
+    word-wrap: break-word;
+}
+.publication:hover .ref_link {
+    text-decoration: underline;
+}
+.title {
+    font-weight: bold;
+    font-size: max(1vw, 16px);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.2;
+    margin: 0 0 5px;
+}
+.author, .publisher, .ref_link {
+    font-size: max(.8vw, 15px);
+    color: rgba(0, 0, 0, .8);
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+
+
+@media screen and (min-width: 961px) {
+    .containers {flex-direction: row; align-items: flex-start; justify-content: space-between;}
+    .left_container, .right_container {width: 48%;}
+    .publishing_year {margin-bottom: 95px;}
+}
+@media screen and (min-width: 1501px) {
+    #publications_list {margin-left: 11vw; margin-right: 11vw;}
+}

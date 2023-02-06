@@ -1,0 +1,108 @@
+.scrolling_animation {
+    transform: translateY(150px);
+    opacity: 0;
+}
+.scrolling_animation.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+#protein_structures {
+    margin: max(4vw, 70px) 6vw 5vw;
+}
+#protein_structures h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: max(1.5vw, 22px);
+}
+#protein_structures h3 {
+    font-size: max(1.1vw, 18px);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px 0;
+}
+#protein_structures a {
+    text-decoration: none;
+    color: darkblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: max(1vw, 16px);
+}
+#protein_structures a:hover {
+    text-decoration: underline;
+}
+#protein_structures p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: max(1vw, 16px);
+    line-height: 1.6;
+}
+#protein_structures > p {
+    margin-bottom: 50px;
+}
+.containers {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.left_side, .right_side {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.left_side {
+    margin-bottom: 25px;
+}
+.right_side {
+    margin-top: 25px;
+}
+.blocks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    outline: 1px groove rgba(0, 0, 0, .19);
+    transition: transform .3s, box-shadow .3s;
+}
+.blocks:last-child {
+    margin-bottom: 0;
+}
+.blocks.scrolling_animation:hover {
+    transform: scale(1.05);
+    outline-style: ridge;
+    box-shadow: 0 4px 8px 0 rgba(0, 0 , 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+}
+#protein_structures .blocks:hover a {
+    text-decoration: underline;
+}
+.blocks a {
+    padding: 0 5px;
+    text-align: center;
+}
+.blocks p {
+    padding: 0 5px;
+    text-align: center;
+}
+.blocks img {
+    display: block;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+@media screen and (min-width: 641px) {
+    .containers {margin-bottom: 4%;}
+    .left_side, .right_side {flex-direction: row; justify-content: space-between; height: 48%;}
+    .left_side {margin-bottom: 2%;}
+    .right_side {margin-top: 2%;}
+    .blocks {width: 48%; margin-bottom: 0;}
+}
+@media screen and (min-width: 1201px) {
+    .containers {flex-direction: row;}
+    .right_side {width: 49%; height: auto; margin-left: 1%; margin-top: 0;}
+    .left_side {width: 49%; height: auto; margin-right: 1%; margin-bottom: 0;}
+    .blocks {height: 100%;}
+}
+@media screen and (min-width: 1501px) {
+    #protein_structures {margin-left: 11vw; margin-right: 11vw;}
+}

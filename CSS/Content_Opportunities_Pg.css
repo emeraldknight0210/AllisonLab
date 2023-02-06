@@ -1,0 +1,260 @@
+body {
+    background-image: url("../Images/Wallpaper5.png");
+    background-position: center;
+    background-size: 120%;
+    background-attachment: scroll;
+} 
+
+#topnavbar .link_container #opportunities_icon {
+    visibility: visible;
+    opacity: 1;
+    right: 0;
+}
+#topnavbar #link_container4 {
+    position: relative;
+}
+#topnavbar #link_container4::after {
+    position: absolute;
+    content: "";
+    z-index: 3;
+    top: max(75%, 40px);
+    left: 50%;
+    border-width: 15px;
+    margin-left: -15px;
+    border-style: solid;
+    border-color: transparent transparent rgb(0, 175, 240) transparent;
+}
+#topnavbar #link_container4 .link {
+    color: rgb(0, 175, 240);
+    padding-right: max(2.5vw, 40px);
+    cursor: default;
+}
+
+.bar1, .bar2, .bar3 {
+    background-color: rgba(0, 175, 240, 1);
+}
+#menu_button:hover {
+    background-color: rgba(0, 175, 240, 1);
+}
+.sidenav {
+    background: url("../Images/Footer_Wallpaper5.png") no-repeat;
+    background-position: right;
+}
+.sidenav a:not(#logo_link):hover {
+    background-color: rgba(0, 175, 240, .3);
+}
+
+#banner {
+    height: max(28vw, 500px);
+}
+.static_banner {
+    width: 100%;
+    height: max(28vw, 500px);
+    object-fit: cover;
+    object-position: 50% 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}
+#intro {
+    display: inline-block;
+    width: 90%;
+}
+#intro h1 {
+    padding-bottom: 30px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px rgb(10, 10, 10);
+}
+#breadcrumb_opportunities_pg {
+    background-color: rgb(0, 175, 240);
+}
+
+.anchor {
+    background-color: rgba(0, 175, 240, .8);
+}
+.anchor:hover {
+    background-color: rgba(255, 255, 255, 1);
+    border-color: rgba(0, 175, 240, 1);
+}
+.anchor:hover div {
+    color: rgba(0, 175, 240, 1);
+}
+
+#footer {
+    background: url("../Images/Footer_Wallpaper5_Rotated.png") no-repeat;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 175, 240, .7);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 175, 240, .9);
+}
+
+
+#open_positions, #ideal_member, #funding_sources {
+    margin: max(4vw, 70px) 6vw 0;
+}
+#open_positions h2, #ideal_member h2, #funding_sources h2 {
+    font-size: max(1.8vw, 30px);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#open_positions h3, #ideal_member h3, #funding_sources h3 {
+    font-size: max(1vw, 18px);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0;
+}
+#open_positions :is(span, p), #ideal_member p, #funding_sources p {
+    font-size: max(.9vw, 16px);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    line-height: 1.6;
+}
+#open_positions span {
+    margin-right: 30px;
+}
+.card.scrolling_animation {
+    line-height: 1.4;
+    padding: max(1vw, 15px);
+    outline: 1px groove rgba(0, 0, 0, .19);
+    border-radius: 3px;
+    margin-bottom: max(2vw, 30px);
+    box-sizing: border-box;
+    transition: transform .3s, box-shadow .3s;
+}
+.card.scrolling_animation:hover, .description.scrolling_animation:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px 0 rgba(0, 0 , 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+    outline-style: ridge;
+}
+.card.scrolling_animation p {
+    margin-bottom: 0;
+}
+
+
+.description.scrolling_animation {
+    position: relative;
+    line-height: 1.4;
+    padding: 15px 20px;
+    outline: 1px groove rgba(0, 0, 0, .19);
+    border-radius: 3px;
+    margin-left: 50px;
+    margin-bottom: max(2vw, 30px);
+    transition: transform .3s, box-shadow .3s;
+}
+.description.scrolling_animation h3 {
+    margin: 10px 0;
+}
+.description.scrolling_animation p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#ideal_member #container1, #ideal_member #container3 {
+    padding-left: 70px;
+}
+#ideal_member #container2, #ideal_member #container4 {
+    padding-left: 70px;
+}
+
+.hexagon_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -104px;
+    top: 50%;
+    transform: translateY(-50%) scale(.5, .5);
+    width: 208px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, .19);
+}
+.hexagon_container:before, .hexagon_container:after {
+    content:"";
+    border-left: 104px solid transparent;
+    border-right: 104px solid transparent;
+    position: absolute
+}
+.hexagon_container:before {
+    top: -59px;
+    border-bottom: 60px solid rgba(0, 0, 0, .19);
+}
+.hexagon_container:after {
+    bottom: -59px;
+    border-top: 60px solid rgba(0, 0, 0, .19);
+}
+.hexagon_container.inner {
+    background-color: white;
+    transform: translate(50%, -50%) scale(.98, .98);
+    z-index: 3;
+}
+.hexagon_container.inner:before {
+    border-bottom: 60px solid white;
+}
+.hexagon_container.inner:after {
+    border-top: 60px solid white;
+}
+.inside_icon {
+    height: 120px;
+    width: auto;
+    z-index: 3;
+}
+
+
+#funding_sources {
+    display: flex;
+    flex-direction: column;
+}
+#first_part, #second_part {
+    display: flex;
+    flex-direction: column;
+}
+
+#div1, #div2, #div3, #div4 {
+    width: 100%;
+}
+#div2 ul li:last-child p {
+    margin: 0;
+    text-align: initial;
+}
+#funding_sources li {
+    font-size: max(.9vw, 16px);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+}
+#funding_sources h2 {
+    margin-bottom: 0;
+}
+#funding_sources > p:first-of-type {
+    margin: 30px 0;
+}
+#funding_sources a {
+    text-decoration: none;
+    color: darkblue;
+}
+#funding_sources a:hover {
+    text-decoration: underline;
+}
+
+
+.scrolling_animation {
+    transform: translateY(150px);
+    opacity: 0;
+}
+.scrolling_animation.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+@media screen and (min-width: 961px) {
+    #ideal_member #container1, #ideal_member #container3 {margin-right: 160px;}
+    #ideal_member #container2, #ideal_member #container4 {margin-left: 160px;}
+    #first_part, #second_part {flex-direction: row;}
+    #div1, #div3 {width: 48%; margin-right: 2%;}
+    #div2, #div4 {width: 48%; margin-left: 2%;}
+    #first_part {margin-bottom: 1%;}
+}
+@media screen and (min-width: 1501px) {
+    #open_positions, #ideal_member, #funding_sources {margin-left: 11vw; margin-right: 11vw;}
+}

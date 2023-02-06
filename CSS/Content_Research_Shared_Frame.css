@@ -1,0 +1,98 @@
+body {
+    background-image: url("../Images/Wallpaper2.png");
+    background-position: center;
+    background-size: 120%;
+    background-attachment: scroll;
+} 
+
+#topnavbar .link_container #research_icon {
+    visibility: visible;
+    opacity: 1;
+    right: 0;
+}
+#topnavbar #link_container1 {
+    position: relative;
+}
+#topnavbar #link_container1::after {
+    position: absolute;
+    content: "";
+    z-index: 3;
+    top: max(75%, 40px);
+    left: 50%;
+    border-width: 15px;
+    margin-left: -15px;
+    border-style: solid;
+    border-color: transparent transparent rgb(238, 42, 123) transparent;
+}
+#topnavbar #link_container1 .link {
+    color: rgb(238, 42, 123);
+    padding-right: max(2.5vw, 40px);
+    cursor: default;
+}
+
+.bar1, .bar2, .bar3 {
+    background-color: rgba(238, 42, 123, 1);
+}
+#menu_button:hover {
+    background-color: rgba(238, 42, 123, 1);
+}
+.sidenav {
+    background: url("../Images/Footer_Wallpaper2.png") no-repeat;
+    background-position: right;
+}
+.sidenav a:not(#logo_link):hover {
+    background-color: rgba(238, 42, 123, .3);
+}
+
+#banner {
+    height: max(28vw, 500px);
+}
+.static_banner {
+    width: 100%;
+    height: max(28vw, 500px);
+    object-fit: cover;
+    object-position: 50% 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}
+#intro {
+    display: inline-block;
+    width: 90%;
+}
+#intro h1 {
+    padding-bottom: 30px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px rgb(10, 10, 10);
+}
+#breadcrumb_research_shared_frame {
+    background-color: rgb(238, 42, 123);
+}
+
+.anchor {
+    background-color: rgba(238, 42, 123, .8);
+}
+.anchor:hover {
+    background-color: rgba(255, 255, 255, 1);
+    border-color: rgba(238, 42, 123, 1);
+}
+.anchor:hover div {
+    color: rgba(238, 42, 123, 1);
+}
+
+#footer {
+    background: url("../Images/Footer_Wallpaper2_Rotated.png") no-repeat;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(238, 42, 123, .7);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(238, 42, 123, .9);
+}
+
+.sub_menu {
+    padding-top: .45em;
+}
+

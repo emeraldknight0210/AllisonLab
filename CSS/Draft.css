@@ -1,0 +1,54 @@
+#linkcontainer1 {
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+#scnavlink1 {
+    background-color: rgb(238, 42, 123);
+    padding-bottom: 9px;
+}
+
+#scnavlink1:active #navbaricon1 {
+    padding-bottom: 20px;
+}
+
+#people {
+    color: rgb(238, 42, 123);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#home {
+    background-color: rgba(169, 169, 169, 0);
+    padding-bottom: 0px;
+    box-shadow: none;
+}
+
+#home:active img{
+    padding-bottom: 25px;
+}
+
+
+
+/* Trang co dropdown thi tang margin-top */
+#dropdown3 {
+    margin-top: 90px;
+}
+
+
+/* Link nao co dropdown thi add pointer & adjust cursor tuong ung */
+#ddpointer3 {
+    float: right;
+    font-size: 20px;
+    margin-top: 7px;
+    margin-right: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    transition: transform 0.2s linear;
+}
+
+#linkcontainer3:hover #ddpointer3 {
+    color: rgb(247, 148, 30);
+    transform: rotate(90deg)
+}
+
+#facilities {
+    cursor: default;
+}

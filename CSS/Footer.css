@@ -1,0 +1,169 @@
+#footer {
+    margin-top: max(4vw, 60px);
+    border-top: 1px groove rgba(0, 0, 0, .19);
+    background-position: top;
+    background-size: 105% 100%;
+}
+
+#upper_part {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: max(1vw, 20px) 5vw max(1vw, 19px);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.img_link {
+    display: flex;
+}
+.img_link img {
+    width: auto;
+    padding: 1vw;
+}
+.img_link #lab_logo {
+    height: max(3vw, 45px); 
+}
+.img_link #univ_logo {
+    height: max(2.5vw, 38px);
+}
+
+#link_containers {
+    display: none;
+    align-items: center;
+    transition: .5s;
+}
+#link_container5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition: .5s;
+}
+#link_container5 span {
+    color: white;
+    font-size: max(1vw, 17px);
+    padding: 0 max(.25vw, 4.5px);
+    transition: .5s;
+}
+
+#upper_part .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2vw;
+    text-decoration: none;
+    font-size: max(1vw, 17px);
+    font-weight: 500;
+    color: white;
+    position: relative;
+    transition: .5s;
+    padding: 0 1vw;
+}
+#upper_part .link .icon {
+    width: max(1vw, 17px);
+    height: auto;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    right: -2vw;
+    transition: .5s;
+}
+
+#link_container5:hover, #link_container6:hover {
+    cursor: pointer;
+}
+#link_container5:hover .icon, #link_container6:hover .icon {
+    visibility: visible;
+    opacity: 1;
+    right: .5vw;
+}
+#link_container5:hover .link, #link_container6:hover .link {
+    padding-right: max(2vw, 24px);
+    padding-left: 0;
+}
+#link_container5:hover span {
+    padding-left: 0;
+    padding-right: max(.5vw, 6px);
+}
+
+#link_containers #break {
+    color: white;
+    font-size: max(1vw, 17px);
+    transition: .5s;
+    padding: .5vw;
+    order: 2;
+}
+#link_containers #break:hover {
+    cursor: default;
+}
+#link_container6 {
+    transition: .5s;
+    order: 3;
+}
+#link_container6:hover + #break {
+    padding-right: 1vw;
+    padding-left: 0;
+}
+
+
+#lower_part {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: max(.5vw, 9px) 6vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(0, 0, 0, .1);
+}
+#lower_part .link {
+    display: flex;
+    align-items: flex-start;
+    text-decoration: none;
+    font-size: max(.7vw, 13px);
+    font-weight: 500;
+    color: white;
+}
+#lower_part .link .icon {
+    width: max(.7vw, 17px);
+    height: auto;
+    margin-right: max(.2vw, 5px);
+}
+.lower_containers {
+    color: white;
+    box-sizing: border-box;
+    padding: 8px 0;
+}
+#lower_container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#lower_container1 .link:last-child {
+    padding-top: 16px;
+}
+#lower_part span {
+    display: none;
+    margin: 0 max(.3vw, 6px);
+    font-size: max(.7vw, 13px);
+    cursor: default;
+    align-self: stretch;
+}
+
+@media screen and (min-width: 641px) {
+    #footer {background-size: 105% auto;}
+    #lower_container1 {flex-direction: row; align-items: center;}
+    #lower_container1 span {display: inline-block;}
+    #lower_container1 .link:last-child {padding-top: 0;}
+}
+@media screen and (min-width: 961px) {
+    #link_containers {display: flex; flex-direction: row;}
+}
+@media screen and (min-width: 1501px) {
+    #upper_part {padding-left: 10vw; padding-right: 10vw;}
+    #lower_part {padding-left: 11vw; padding-right: 11vw;}
+}
+@media screen and (min-width: 1801px) {
+    #lower_part {flex-direction: row; align-items: center; justify-content: space-between;}
+}

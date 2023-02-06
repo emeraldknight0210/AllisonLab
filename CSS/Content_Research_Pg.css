@@ -1,0 +1,35 @@
+#research {
+    margin: max(4vw, 70px) 6vw max(20vw, 70px);
+}
+#research h2 {
+    font-size: max(1.8vw, 30px);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#research div {
+    font-size: max(1vw, 16px);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    line-height: 1.6;
+}
+.link_button {
+    display: inline-block;
+    padding: max(.8vw, 6px) max(1vw, 8px);
+    margin-right: 1.5%;
+    margin-bottom: 15px;
+    background-color: white;
+    color: rgba(238, 42, 123, 1);
+    font-size: max(1vw, 17px);
+    text-decoration: none;
+    border: 2px solid rgba(238, 42, 123, 1);
+    border-radius: 3px;
+    transition: .3s;
+}
+.link_button:hover {
+    background-color: rgba(238, 42, 123, 1);
+    color: white;
+}
+
+
+@media screen and (min-width: 1501px) {
+    #research {margin-left: 11vw; margin-right: 11vw;}
+}
